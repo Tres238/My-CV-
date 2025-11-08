@@ -1,0 +1,157 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  background-color: #e6f0fa;
+  color: #333;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+header {
+  background-color: #0077b6;
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+header .profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-bottom: 1.5rem;
+}
+
+header h1 {
+  margin: 0.2rem 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin: 0.3rem 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+header .social-links a {
+  margin: 0 0.7rem;
+  font-size: 1.8rem;
+  color: white;
+  transition: 0.3s;
+}
+
+header .social-links a:hover {
+  color: #ffdd00;
+}
+
+/* Main Content */
+main {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem 1.5rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+section {
+  margin-bottom: 3rem;
+  padding: 1.5rem 1rem;
+  background-color: #f8fbff;
+  border-radius: 10px;
+}
+
+h2 {
+  color: #0077b6;
+  border-bottom: 3px solid #0077b6;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: disc inside;
+  font-size: 1.05rem;
+}
+
+/* Contact Form */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  padding: 0.9rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.contact-form button:hover {
+  background-color: #023e8a;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #0077b6;
+  color: white;
+  font-size: 1rem;
+  margin-top: 3rem;
+}
+
+/* Media Queries for Desktop */
+@media screen and (min-width: 768px) {
+  header .header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  header .profile-pic {
+    margin: 0;
+  }
+
+  header h1, header p {
+    text-align: left;
+  }
+
+  header .social-links {
+    text-align: right;
+  }
+
+  main {
+    padding: 3rem 3rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    max-width: 1200px;
+    padding: 4rem 4rem;
+  }
+}
